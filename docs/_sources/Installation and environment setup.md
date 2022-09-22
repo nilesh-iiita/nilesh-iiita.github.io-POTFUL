@@ -2,15 +2,38 @@
 
 As part of this protocol, all analysis steps are carried out using Python, an interpreted, high-level general-purpose programming language that can be used on a wide variety of operating systems, including LINUX, Windows, and macOS. Currently, the protocol is written in Python (`v3.10.4`) on a Linus-based Linux system (Red Hat Enterprise Linux version 7.9 (Maipo)). In addition to Python, R packages and tools are required for several analyses such as WGCNA, though those analyses are not part of this protocol. The protocol can be run on most UNIX and Linux distributions, however, Ubuntu 22 and Fedora 36, Red Hat 7, and macOS Monterey are recommended. Besides HPC devices, this protocol has been tested on other devices, with the following specifications:
 
-- OS: Windows 11 (5.10.102.1-microsoft-standard-WSL2), and Fedora 36. 
-- RAM: 16 GB 
-- SDD: 256 GB 
-- CPU: Intel i7 
-- conda 4.12.0
+::::{grid}
+
+:::{grid-item-card} OS!
+Windows 11 (5.10.102.1-microsoft-standard-WSL2), and Fedora 36.
+:::
+
+::::
+
+
+::::{grid}
+:gutter: 4
+
+:::{grid-item-card} RAM!
+16 GB 
+:::
+
+:::{grid-item-card} SDD!
+256 GB 
+:::
+
+:::{grid-item-card} CPU!
+Intel i7
+:::
+
+:::{grid-item-card} Conda!
+v4.12.0
+:::
+::::
 
 A major requirement for `POTFUL` is `RUST`. The user must first install RUST on the OS of their choice.
 
-## Install Rust and Cargo
+## Install Rust
 
 ````{tab-set}
 ```{tab-item} Linux, WSL2 and mac OS
@@ -53,7 +76,7 @@ You can learn a lot more at [The Cargo Book](https://doc.rust-lang.org/cargo/get
 
 ## Clone git repository
 
-Fork the POTFUL git repository and clone or download.
+Fork the [POTFUL](https://github.com/nilesh-iiita/POTFUL) git repository and clone or download.
 
     git clone https://github.com/<User Name>/POTFUL.git
 
